@@ -8,10 +8,12 @@
 <ion-content padding>
   <ion-list>
        <ion-item *ngFor="let item of items; let count = index" (click)="setContent(count)" >
-             <ion-thumbnail item-left item-right>
-                   <img src='{{"assets/img/"+item.image}}'>
-             </ion-thumbnail>
+            <span><img class='icon left' src='assets/icon/Cooking.png'>
              <h2>{{item.title}}</h2>
+             </span>
+             <ion-thumbnail item-right>
+               <img src='{{"assets/img/"+item.image}}' class="item-right img-component">
+             </ion-thumbnail>
        </ion-item>
   </ion-list>
 </ion-content>
